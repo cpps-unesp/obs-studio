@@ -1,6 +1,9 @@
 # Configurações para OBS Studio
 
-Automatização de configurações do OBS Studio
+Este repositório visa viabilizar a automatização e compartilhamento de configurações do OBS Studio. 
+
+Em um ambiente multiusuário no Windows, o OBS Studio normalmente salva suas configurações separadamente para cada usuário (por exemplo, em `C:\Users\<SeuUsuario>\AppData\Roaming\obs-studio`). Isso significa que cada conta de usuário teria suas próprias cenas, perfis e ajustes, o que dificulta a padronização e inviabiliza reutilização de configuração entre usuários. Usar uma pasta local compartilhada para as configurações do OBS permite que todos os usuários do computador utilizem a mesma configuração. Em laboratórios ou computadores compartilhados, isso garante consistência (todas as contas veem as mesmas cenas e configurações) e facilita a manutenção (basta atualizar uma única vez para surtir efeito para todos).
+
 
 ## Pré-requisitos
 
