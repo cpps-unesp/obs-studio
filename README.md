@@ -5,8 +5,11 @@ Automatização de configurações do OBS Studio
 ## Pré-requisitos
 
 :white_check_mark: Windows 11
+
 :white_check_mark: Executar PowerShell como Administrador
+
 :white_check_mark: Definir uma pasta compartilhada local ou em rede para a configuração
+
 :white_check_mark: Todos os usuários precisam de permissão de escrita nessa pasta
 
 
