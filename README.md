@@ -30,19 +30,21 @@ Automatização de configurações do OBS Studio
 ## Como usar
 
 
-- Abra PowerShell como Administrador
-
-- Habilite a execução temporária e rode o script com o comando abaixo:
+- Abra PowerShell como Administrador e roda o comando abaixo:
 
 ```
 Set-ExecutionPolicy Bypass -Scope Process -Force
+irm https://raw.githubusercontent.com/cpps-unesp/obs-studio/main/bootstrap.ps1 | iex
+bootstrap.ps1 -Script setup -PassThruArgs @('-SharedPath','D:\OBS_Config\obs-studio','-SeedFromCurrent')
+
 ```
 
-- Rode o script:
+## Rollback
 
 ```
-# Exemplo local
-.\OBS-Symlink-Setup.ps1 -SharedPath "D:\OBS_Config\obs-studio" -SeedFromCurrent
+Set-ExecutionPolicy Bypass -Scope Process -Force
+irm https://raw.githubusercontent.com/cpps-unesp/obs-studio/main/bootstrap.ps1 | iex
+bootstrap.ps1 -Script rollback -PassThruArgs @('-VerboseLog')
 
 ```
 
