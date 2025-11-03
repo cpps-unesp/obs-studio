@@ -12,7 +12,9 @@ $ErrorActionPreference = 'Stop'
 # Monta URL para o arquivo {setup|rollback}.ps1 no Raw GitHub
 $base = "https://raw.githubusercontent.com/$Repo/$Branch"
 $scriptName = ($Script.ToLower() + '.ps1')
-$scriptUrl = "$base/$scriptName"
+# $scriptUrl = "$base/$scriptName"
+$scriptUrl = "https://raw.githubusercontent.com/cpps-unesp/obs-studio/main/$scriptName"
+
 
 # Baixa para TEMP com cache-buster
 $tmp = Join-Path $env:TEMP ("obs_{0}_{1}.ps1" -f $Script, (Get-Random))
