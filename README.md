@@ -38,7 +38,7 @@ Em um ambiente multiusuário no Windows, o OBS Studio normalmente salva suas con
 ```
 Set-ExecutionPolicy Bypass -Scope Process -Force
 irm https://raw.githubusercontent.com/cpps-unesp/obs-studio/main/bootstrap.ps1 | iex
-bootstrap.ps1 -Script setup -PassThruArgs @('-SharedPath','D:\OBS_Config\obs-studio','-SeedFromCurrent')
+bootstrap.ps1 -Script setup -PassThruArgs @('-SharedPath','C:\OBS_Config\obs-studio','-SeedFromCurrent')
 
 ```
 
